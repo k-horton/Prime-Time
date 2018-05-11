@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Local CSS file -->
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- REGULAR JS FILE -->
+    <script type="text/javascript" src="JavaScript.js"></script>
+    <meta charset="utf-8" />
+    <title>Prime Time</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Prime Time<span class="blinkMe">|</span></h1>
+    </div>
+    <div class="banner">
+        <h2>It's time to define whether your number's prime!</h2>
+    </div>
+    <!-- FORM FOR USER INPUT -->
+    <div class="circle">
+        <div class="formBox">
+            <br><br>
+            Please enter a number below:<br>
+            <form>
+                <input type="text" pattern="^[0-9]*" id="num" maxlength="16" />
+                <input type="button" class="submit" value="Submit" onclick="checkPrime()" />
+            </form>
+        </div>
+        <!-- RESULTS OUTPUT DIV HERE -->
+        <div id="output">
+        </div>
+    </div>
+</body>
+</html>
